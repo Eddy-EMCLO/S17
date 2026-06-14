@@ -32,4 +32,6 @@ Exercice 5 - Dédoublonnage
 - Quelles méthodes de Livre rendent cela possible ?
 - Que se passerait-il si Livre ne les définissait pas ?
 
-[votre réponse ici]
+1. l'isbn est l'identifiant du livre c'est le seul attribut qui rend un livre unique
+2. les methodes __eq__ et __hash__ 
+3. on devrait plus comparer les isbn mais les identités memoires

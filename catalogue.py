@@ -113,7 +113,8 @@ def compter_distincts(livres):
     Returns:
         int: Nombre de livres distincts.
     """
-    raise NotImplementedError("À compléter (voir énoncé TP, exercice 5).")
+    distincts = set (livre.isbn for livre in livres)
+    return len(distincts)
 
 
 def dedoublonner(livres):
@@ -125,7 +126,8 @@ def dedoublonner(livres):
     Returns:
         list: Liste sans doublon, ordre de première apparition préservé.
     """
-    raise NotImplementedError("À compléter (voir énoncé TP, exercice 5).")
+    dejavu = dict.fromkeys((l.isbn for l in livres))
+    return [livre for livre in livres if livre.isbn in dejavu]
 
 
 # ──────────────────────────────────────────────────────────────────────
