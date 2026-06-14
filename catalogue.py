@@ -126,8 +126,7 @@ def dedoublonner(livres):
     Returns:
         list: Liste sans doublon, ordre de première apparition préservé.
     """
-    dejavu = dict.fromkeys((l.isbn for l in livres))
-    return [livre for livre in livres if livre.isbn in dejavu]
+    return list(dict.fromkeys(livres))
 
 
 # ──────────────────────────────────────────────────────────────────────

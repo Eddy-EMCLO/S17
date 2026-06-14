@@ -34,9 +34,6 @@ if __name__ == "__main__":
 
     tous = catalogue + [reedition]
     
-    DOUBLON = Livre("1984 (réédition)", "Orwell", "9780451524935", 328, 1949)
-    AVEC_DOUBLON = catalogue + [DOUBLON]
-    
     print(f"Livres ajoutés au catalogue : {len(tous)}")
 
     distincts = set(tous)
