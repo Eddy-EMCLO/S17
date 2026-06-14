@@ -21,8 +21,8 @@ Exercice 3 - reverse vs négation
 - Pourquoi reverse=True ne convient-il pas ici ?
 - Comment la négation du critère « année » résout-elle le problème ?
 
-[votre réponse ici]
-
+1. parce qu'on a deux criteres different avec des directions opposés
+2. elle resout le probleme car elle inverserait ce seul critère
 
 ================================================================
 Exercice 5 - Dédoublonnage
