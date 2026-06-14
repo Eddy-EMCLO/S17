@@ -11,7 +11,9 @@ Exercice 1 - Diagnostic du set
 - Quelles méthodes de Livre sont en jeu ? Bug ou décision de conception ?
 
 [votre réponse ici]
-
+1. 4 livres ont ete ajoute ,l'ensemble en garde 3
+2. parce que "set" agis cree un ensemble qui ne contien pas de doublons 
+3. les methodes __eq__ et __hash__ surement une decison de conception
 
 ================================================================
 Exercice 3 - reverse vs négation
