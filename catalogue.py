@@ -84,7 +84,7 @@ def rechercher_par_auteur(livres, auteur):
     Returns:
         list: Les Livre correspondants (liste éventuellement vide).
     """
-    raise NotImplementedError("À compléter (voir énoncé TP, exercice 4).")
+    return [livre for livre in livres if livre.auteur == auteur]
 
 
 def rechercher_par_isbn(livres, isbn):
@@ -97,7 +97,7 @@ def rechercher_par_isbn(livres, isbn):
     Returns:
         Livre: Le livre correspondant, ou None s'il est absent.
     """
-    raise NotImplementedError("À compléter (voir énoncé TP, exercice 4).")
+    return next ( (livre for livre in livres if livre.isbn == isbn ), None)
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -159,3 +159,4 @@ def regrouper_par_auteur(livres):
 if __name__ == "__main__":
     print("Squelette non implémenté : complétez les fonctions, "
           "puis lancez la suite de tests.")
+    
